@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Zone - Sell Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page active">
+        <header>
+            <h1>Car Zone</h1>
+            <div class="nav-buttons">
+                <a href="index.html"><button>Home</button></a>
+                <button onclick="goToBuyPage()">Buy</button>
+                <button onclick="goToSellPage()">Sell</button>
+                <button onclick="goToLoginPage()">Logout</button>
+            </div>
+        </header>
+        <div class="car-image-sell"></div>
+        <div class="sell-form-container">
+            <div class="image-upload">
+                <div class="upload-placeholder" id="uploadPlaceholder">
+                    <span class="upload-icon" id="uploadIcon">↑</span>
+                    <img id="uploadedImage" style="display: none; width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <input type="file" id="imageUploadInput" accept="image/*" style="display: none;" onchange="handleImageUpload(event)">
+                <button class="upload-button" onclick="triggerImageUpload()">Upload Images</button>
+            </div>
+            <div class="car-details-form">
+                <label>Car Name</label>
+                <input type="text" placeholder="Car Name" id="carNameInput">
+                <label>Year of Mfg:</label>
+                <input type="text" placeholder="Year of Manufacturing" id="yearOfMfgInput">
+                <label>Colour</label>
+                <input type="text" placeholder="Colour" id="colourInput">
+                <label>Other Description</label>
+                <textarea placeholder="Other Description" id="descriptionInput"></textarea>
+                <button class="submit-button" onclick="submitCar()">Submit</button>
+            </div>
+        </div>
+        <footer>
+            <p>Contact Us</p><br>
+            <p>carzone@gmail.com</p><br>
+            <p>9876543210</p><br>
+            <div class="social-icons">
+                <a href="#">X</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

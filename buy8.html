@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Zone - Buy Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page active">
+        <header>
+            <h1>Car Zone</h1>
+            <div class="nav-buttons">
+                <a href="index.html"><button>Home</button></a>
+                <button onclick="goToBuyPage()">Buy</button>
+                <button onclick="goToSellPage()">Sell</button>
+                <button onclick="goToLoginPage()">Logout</button>
+            </div>
+        </header>
+        <div class="buy-container">
+            <div class="vehicle-details">
+                <img src="assets/car-buy-8.png" class="car-image-large">
+                <div class="details">
+                    <h3>Vehicle Details</h3>
+                    <h4>Car Name:</h4><p> BMW 540i </p>
+                    <h4>Year of Mfg:</h4> <p>2018</p>
+                    <h4>Fuel used:</h4><p> Diesel </p>
+                    <h4>color:</h4> <p>Grey</p>
+                    <h4>Other description:</h4> <p>Good Condition</p>
+                    <div class="action-buttons">
+                        <button class="action-button" onclick="initiatePayment()">Initiate Payment</button>
+                        <button class="action-button" onclick="bookTestDrive()">Book a Test Drive</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-list">
+                <div class="item">
+                    <img src="assets/car-buy-1.png" alt="Car 1">
+                    <a href="buy.html"><p>Mustang<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-2.png" alt="Car 2">
+                    <a href="buy2.html"><p>Porche<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-3.png" alt="Car 3">
+                    <a href="buy3.html"><p>Dodge<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-4.png" alt="Car 4">
+                    <a href="buy4.html"><p>BMW M2<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-5.png" alt="Car 1">
+                    <a href="buy5.html"><p>BMW M3<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-6.png" alt="Car 2">
+                    <a href="buy6.html"><p>Jaguar<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-7.png" alt="Car 3">
+                    <a href="buy7.html"><p>BMW M5<br>$1000</p></a>
+                </div>
+                <div class="item">
+                    <img src="assets/car-buy-8.png" alt="Car 4">
+                    <a href="buy8.html"><p>BMW 540i<br>$1000</p></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Contact Us</p><br>
+            <p>carzone@gmail.com</p><br>
+            <p>9876543210</p><br>
+            <div class="social-icons">
+                <a href="#">X</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

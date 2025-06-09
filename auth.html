@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Zone - Auth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page active">
+        <h1>Car Zone</h1>
+        <h2>New car<br>New journeys</h2>
+        <div class="car-image" style="margin-left: 15%;"></div>
+
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-form active">
+            <h4>Login</h4>
+            <input type="text" placeholder="User Id">
+            <input type="password" placeholder="Password">
+            <button onclick="login()">Sign In</button>
+            <a href="#" onclick="showSignupForm()" class="signup-link">Sign Up?</a>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signupForm" class="auth-form">
+            <h4>Sign Up</h4>
+            <input type="text" placeholder="User Id">
+            <input type="password" placeholder="Password">
+            <button onclick="signup()">Sign Up</button>
+            <a href="#" onclick="showLoginForm()" class="signup-link">Already have an account? Sign In</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
